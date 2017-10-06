@@ -25,7 +25,7 @@ SECRET_KEY = '8hxi!b53gyjfv6hb+o$1&5)2y%$gcukm^h@t!q56!6s-h)9e2('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tourofheroes-atley.herokuapp.com']
 
 
 # Application definition
