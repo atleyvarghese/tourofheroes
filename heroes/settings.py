@@ -97,11 +97,11 @@ WSGI_APPLICATION = 'heroes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hero',
-        'USER': 'atley',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd1gm70ellkclmt',
+        'USER': 'dglhojqqwnzowl',
+        'PASSWORD': '42ba8b88efedd63265670c3e56c5288b1c889e3d5ee5ba6e86b3905276d45530',
+        'HOST': 'ec2-107-22-235-167.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
