@@ -184,3 +184,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CORS_ALLOW_CREDENTIALS=True
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+CSRF_TRUSTED_ORIGINS = (
+    'tourofheroes-atley.herokuapp.com',
+)
