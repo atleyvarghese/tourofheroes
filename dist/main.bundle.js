@@ -80,7 +80,7 @@ var AccountsService = (function () {
         var _this = this;
         var user1;
         var data1;
-        var url = "http://localhost:8000/api/rest-auth/registration/";
+        var url = "https://tourofheroes-atley.herokuapp.com/api/rest-auth/registration/";
         return this.http
             .post(url, JSON.stringify(data), { headers: this.headers })
             .toPromise()
@@ -100,7 +100,6 @@ var AccountsService = (function () {
         })
             .catch(function (response) {
             user1 = response.json();
-            debugger;
             _this.SignUperrors = true;
             if (user1.email) {
                 _this.emailerrors = true;
@@ -119,7 +118,7 @@ var AccountsService = (function () {
         if (currentUser) {
             this.headers.append({ 'Authorization': 'Token ' + currentUser.json });
         }
-        var url = "http://localhost:8000/api/rest-auth/registration/";
+        var url = "https://tourofheroes-atley.herokuapp.com/api/rest-auth/registration/";
         return this.http
             .post(url, JSON.stringify(data), { headers: this.headers })
             .toPromise()
@@ -130,7 +129,7 @@ var AccountsService = (function () {
         var _this = this;
         var user1;
         var data1;
-        var url = "http://localhost:8000/api/accounts/";
+        var url = "https://tourofheroes-atley.herokuapp.com/api/accounts/";
         return this.http
             .post(url, JSON.stringify(data), { headers: this.headers })
             .toPromise()
@@ -149,7 +148,7 @@ var AccountsService = (function () {
         var _this = this;
         var user1;
         var data1;
-        var url = "http://localhost:8000/api/rest-auth/login/";
+        var url = "https://tourofheroes-atley.herokuapp.com/api/rest-auth/login/";
         return this.http
             .post(url, JSON.stringify(data), { headers: this.headers })
             .toPromise()
@@ -177,7 +176,7 @@ var AccountsService = (function () {
     AccountsService.prototype.logout2 = function () {
         var _this = this;
         // remove user from local storage to log user out
-        var url = "http://localhost:8000/api/rest-auth/logout/";
+        var url = "https://tourofheroes-atley.herokuapp.com/api/rest-auth/logout/";
         return this.http
             .post(url, { headers: this.headers })
             .toPromise()
