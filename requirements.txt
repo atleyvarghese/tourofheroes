@@ -7,3 +7,5 @@ psycopg2==2.7.3.1
 httpie
 django-rest-auth
 django-allauth
+gunicorn==19.7.1
+whitenoise==3.3.0
