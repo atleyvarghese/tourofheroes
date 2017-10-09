@@ -501,7 +501,8 @@ var _a;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyLogoutComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_accounts_service__ = __webpack_require__("../../../../../src/app/_services/accounts.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__account__ = __webpack_require__("../../../../../src/app/accounts/account.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_accounts_service__ = __webpack_require__("../../../../../src/app/_services/accounts.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -513,9 +514,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var MyLogoutComponent = (function () {
     function MyLogoutComponent(AccountsService) {
         this.AccountsService = AccountsService;
+        this.model = __WEBPACK_IMPORTED_MODULE_1__account__["a" /* MyUser */];
         this.AccountsService.logout2();
     }
     return MyLogoutComponent;
@@ -525,7 +528,7 @@ MyLogoutComponent = __decorate([
         selector: 'hero-login',
         template: __webpack_require__("../../../../../src/app/accounts/login.component.html")
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_accounts_service__["a" /* AccountsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_accounts_service__["a" /* AccountsService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_accounts_service__["a" /* AccountsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_accounts_service__["a" /* AccountsService */]) === "function" && _a || Object])
 ], MyLogoutComponent);
 
 var _a;
