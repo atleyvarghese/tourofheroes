@@ -156,7 +156,7 @@ SITE_ID = 1
 
 
 CORS_ORIGIN_WHITELIST = (
-'tourofheroes-atley.herokuapp.com',
+'tourofheroes-atley.herokuapp.com','localhost',
 )
 # CORS_ORIGIN_ALLOW_ALL = True
 
@@ -173,7 +173,9 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
-     ),
+        'rest_framework.authentication.SessionAuthentication',
+
+    ),
  }
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -187,6 +189,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CORS_ALLOW_CREDENTIALS=True
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 CSRF_TRUSTED_ORIGINS = (
-    'tourofheroes-atley.herokuapp.com',
+    'tourofheroes-atley.herokuapp.com','localhost',
 )
 CORS_REPLACE_HTTPS_REFERER = True
