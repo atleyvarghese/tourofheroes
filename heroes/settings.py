@@ -188,3 +188,4 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 CSRF_TRUSTED_ORIGINS = (
     'tourofheroes-atley.herokuapp.com',
 )
+CORS_REPLACE_HTTPS_REFERER = True
