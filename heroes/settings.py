@@ -156,7 +156,7 @@ SITE_ID = 1
 
 
 CORS_ORIGIN_WHITELIST = (
-'tourofheroes-atley.herokuapp.com','localhost',
+'tourofheroes-atley.herokuapp.com','localhost:8000',
 )
 # CORS_ORIGIN_ALLOW_ALL = True
 
