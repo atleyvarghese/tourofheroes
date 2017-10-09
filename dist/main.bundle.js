@@ -1182,7 +1182,7 @@ var MyComponent = (function () {
 MyComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'my-component',
-        template: "\n<p>fdcbhdfgnhdfgzcnhdgzfn</p>\n  <li *ngFor=\"let hero of results\">\n    {{ hero.name }}\n  </li>\n"
+        template: "\n  <li *ngFor=\"let hero of results\">\n    {{ hero.name }}\n  </li>\n"
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_hero_service__["a" /* HeroService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_hero_service__["a" /* HeroService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object])
 ], MyComponent);
