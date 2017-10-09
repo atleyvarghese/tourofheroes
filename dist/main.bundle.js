@@ -516,11 +516,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var MyLogoutComponent = (function () {
     function MyLogoutComponent(AccountsService) {
         this.AccountsService = AccountsService;
-    }
-    MyLogoutComponent.prototype.ngOnInit = function () {
         this.AccountsService.logout2();
         console.log("Logged out");
-    };
+    }
     return MyLogoutComponent;
 }());
 MyLogoutComponent = __decorate([
