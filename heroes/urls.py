@@ -23,7 +23,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^api/',include('hero.urls')),
-    url(r'^$', serve, kwargs={'path': 'index.html'}),
+    # url(r'^$', serve, kwargs={'path': 'index.html'}),
     url(r'^(?!/?static/)(?!/?media/)(?P<path>.*\..*)$',
         RedirectView.as_view(url='/static/%(path)s', permanent=False)),
+
+    url(r'^.*', serve, kwargs={'path': 'index.html'}),
+
 ]
