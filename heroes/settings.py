@@ -155,8 +155,10 @@ ACCOUNT_LOGOUT_ON_GET = True
 SITE_ID = 1
 
 
-# CORS_ORIGIN_WHITELIST =
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+'tourofheroes-atley.herokuapp.com',
+)
+# CORS_ORIGIN_ALLOW_ALL = True
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
